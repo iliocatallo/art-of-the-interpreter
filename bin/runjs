@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# https://stackoverflow.com/a/38558776
+set -- "${@/%/.js}"
+
+# https://github.com/denoland/deno/discussions/11425#discussion-3464194
+# `|| true` because deno will exit with status > 0 when the tests fail – and yet
+# we still want to see the output, but patat is going to show the output
+# only when status == 0
+cd src/
+cat H.js - $@ F.js | deno run -A - || true
