@@ -2587,7 +2587,7 @@ function apply(proc, args, env) {
 
 The ability to use _anonymous procedures_ and _free variables_ gives us the freedom to express interesting procedures
 
-```scheme
+```
 (define (scale s v)
   (map (lambda (x) (* x s)) v))
 ```
@@ -2596,7 +2596,7 @@ The ability to use _anonymous procedures_ and _free variables_ gives us the free
 
 The ability to use _anonymous procedures_ and _free variables_ gives us the freedom to express interesting procedures
 
-```scheme
+```
 (define (scale s v)
   (map (𝗹𝗮𝗺𝗯𝗱𝗮 (𝘅) (* 𝘅 𝘀)) v))
                         ┬
@@ -2608,7 +2608,7 @@ The ability to use _anonymous procedures_ and _free variables_ gives us the free
 
 Suppose that we decide to use the name `l` rather than `s` to represent the scalar
 
-```scheme
+```
 (define (scale l v)
   (map (𝗹𝗮𝗺𝗯𝗱𝗮 (𝘅) (* 𝘅 𝗹)) v))
                         ┬
