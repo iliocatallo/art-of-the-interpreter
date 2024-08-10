@@ -18,7 +18,7 @@ export const test = new Proxy(uvuTest, {
 
 /*
 It's kind of useless to show the entire stack trace when running a failing test on a slide, it eats up space
-without any clear advantage. `Silence` intercepts application of some throwing function in order to to modify
+without any clear advantage. `Silence` intercepts application of some throwing function and modifies
 the `err.stack` property to the empty string.
 */
 const silence = fn =>
