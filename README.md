@@ -31,7 +31,7 @@ Please refer to the [Requirements](#requirements) section for more details.
 
 ## Requirements
 
-The presentation should work on every system where the presentation tool [Patat](https://github.com/jaspervdj/patat) is available. A working installation of [Deno](https://deno.com/) is required to run the examples in the slides.
+The presentation should work on every system where the presentation tool [Patat](https://github.com/jaspervdj/patat) is available. A working installation of [Deno](https://deno.com/) is required to run the examples in the slides. Images are encoded in [Sixel](https://en.wikipedia.org/wiki/Sixel) and shown using [ImageMagick](https://imagemagick.org/). A list of terminal emulators supporting Sixel is available [here](https://www.arewesixelyet.com/).
 
 Note that an installation of [Rosetta 2](https://support.apple.com/en-us/HT211861) may be needed for Macs with M chips.
 
